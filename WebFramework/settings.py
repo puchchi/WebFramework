@@ -135,3 +135,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+import os
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_PATH, 'option/templates'),
+    )
+#TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
+

@@ -38,6 +38,9 @@
     <Compile Include="manage.py" />
     <Compile Include="option\admin.py" />
     <Compile Include="option\apps.py" />
+    <Compile Include="option\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="option\migrations\__init__.py" />
     <Compile Include="option\models.py" />
     <Compile Include="option\tests.py" />
@@ -70,11 +73,13 @@
     <Folder Include="option\" />
     <Folder Include="option\migrations\" />
     <Folder Include="option\templates\" />
+    <Folder Include="option\templates\option\" />
     <Folder Include="Utility\" />
     <Folder Include="WebFramework\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="option\templates\index.html" />
+    <Content Include="option\templates\option\index.html" />
+    <Content Include="option\templates\option\oi.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
